@@ -19,7 +19,7 @@ public class HibernateUtil {
 	static {
 		try {
 			sessionFactory = new AnnotationConfiguration()
-			.configure("com/shebshi/www/HousingRating/Domain/hibernate.cfg.xml")  //if current setting does not work use ****.configure();
+			.configure("config/hibernate.cfg.xml")  //if current setting does not work use ****.configure();
 			.addPackage("com.shebshi.www.HousingRating.Domain") //the fully qualified package name
 			.addAnnotatedClass(Property.class)
 			.addAnnotatedClass(LandLord.class)
